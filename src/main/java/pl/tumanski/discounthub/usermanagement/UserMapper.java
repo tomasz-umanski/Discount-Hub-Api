@@ -1,7 +1,6 @@
 package pl.tumanski.discounthub.usermanagement;
 
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 import pl.tumanski.discounthub.usermanagement.model.dto.CreateUserDto;
 import pl.tumanski.discounthub.usermanagement.model.dto.RoleDto;

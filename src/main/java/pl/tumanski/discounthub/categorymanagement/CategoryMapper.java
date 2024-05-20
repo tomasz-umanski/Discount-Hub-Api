@@ -2,7 +2,6 @@ package pl.tumanski.discounthub.categorymanagement;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
-import org.springframework.data.jpa.repository.JpaRepository;
 import pl.tumanski.discounthub.categorymanagement.model.dto.CategoryDto;
 import pl.tumanski.discounthub.categorymanagement.model.dto.CreateCategoryDto;
 import pl.tumanski.discounthub.categorymanagement.model.entity.Category;

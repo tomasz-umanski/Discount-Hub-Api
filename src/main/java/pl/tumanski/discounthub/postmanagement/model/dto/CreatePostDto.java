@@ -1,7 +1,6 @@
 package pl.tumanski.discounthub.postmanagement.model.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import jakarta.persistence.Column;
 import jakarta.validation.constraints.*;
 import lombok.Builder;
 import lombok.Data;

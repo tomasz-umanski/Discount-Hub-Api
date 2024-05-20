@@ -2,18 +2,12 @@ package pl.tumanski.discounthub.usermanagement;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import pl.tumanski.discounthub.categorymanagement.exception.CategoryCreationException;
-import pl.tumanski.discounthub.categorymanagement.exception.CategoryNotFoundException;
-import pl.tumanski.discounthub.categorymanagement.model.dto.PatchCategoryDto;
-import pl.tumanski.discounthub.categorymanagement.model.entity.Category;
-import pl.tumanski.discounthub.usermanagement.UserService;
 import pl.tumanski.discounthub.usermanagement.exception.InvalidCredentialsException;
 import pl.tumanski.discounthub.usermanagement.exception.UserCreationException;
 import pl.tumanski.discounthub.usermanagement.exception.UserNotFoundException;
 import pl.tumanski.discounthub.usermanagement.model.dto.CreateUserDto;
 import pl.tumanski.discounthub.usermanagement.model.dto.LoginDto;
 import pl.tumanski.discounthub.usermanagement.model.dto.PatchUserDto;
-import pl.tumanski.discounthub.usermanagement.model.dto.UserDto;
 import pl.tumanski.discounthub.usermanagement.model.entity.User;
 import pl.tumanski.discounthub.utils.UnitTest;
 

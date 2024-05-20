@@ -4,7 +4,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
-import pl.tumanski.discounthub.categorymanagement.exception.CategoryCreationException;
 import pl.tumanski.discounthub.usermanagement.exception.InvalidCredentialsException;
 import pl.tumanski.discounthub.usermanagement.exception.UserCreationException;
 import pl.tumanski.discounthub.usermanagement.exception.UserNotFoundException;
@@ -105,7 +104,7 @@ class UserServiceImpl implements UserService {
             handleDataIntegrityViolation(e, user);
         } catch (Exception e) {
             log.error("Failed to patch user in repository", e);
-            throw new CategoryCreationException("Failed to patch user", e);
+            throw new UserCreationException("Failed to patch user", e);
         }
         return null;
     }

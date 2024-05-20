@@ -2,10 +2,8 @@ package pl.tumanski.discounthub.categorymanagement;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import pl.tumanski.discounthub.categorymanagement.CategoryService;
 import pl.tumanski.discounthub.categorymanagement.exception.CategoryCreationException;
 import pl.tumanski.discounthub.categorymanagement.exception.CategoryNotFoundException;
-import pl.tumanski.discounthub.categorymanagement.model.dto.CategoryDto;
 import pl.tumanski.discounthub.categorymanagement.model.dto.CreateCategoryDto;
 import pl.tumanski.discounthub.categorymanagement.model.dto.PatchCategoryDto;
 import pl.tumanski.discounthub.categorymanagement.model.entity.Category;

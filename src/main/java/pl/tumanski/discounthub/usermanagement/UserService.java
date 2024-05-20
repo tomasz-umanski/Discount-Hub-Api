@@ -3,7 +3,6 @@ package pl.tumanski.discounthub.usermanagement;
 import pl.tumanski.discounthub.usermanagement.model.dto.CreateUserDto;
 import pl.tumanski.discounthub.usermanagement.model.dto.LoginDto;
 import pl.tumanski.discounthub.usermanagement.model.dto.PatchUserDto;
-import pl.tumanski.discounthub.usermanagement.model.dto.UserDto;
 import pl.tumanski.discounthub.usermanagement.model.entity.User;
 
 import java.util.List;

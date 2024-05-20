@@ -2,7 +2,6 @@ package pl.tumanski.discounthub.postmanagement.model.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
-import pl.tumanski.discounthub.usermanagement.model.dto.RoleDto;
 
 import java.util.UUID;
 
@@ -17,7 +16,4 @@ public class AuthorDto {
 
     @Schema(description = "Username of the author", example = "john_doe")
     private String username;
-
-    @Schema(description = "Role of the user")
-    private RoleDto role;
 }

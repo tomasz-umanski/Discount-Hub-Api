@@ -5,7 +5,6 @@ import pl.tumanski.discounthub.postmanagement.model.dto.PatchPostDto;
 import pl.tumanski.discounthub.postmanagement.model.entity.Post;
 
 import java.util.List;
-import java.util.UUID;
 
 public interface PostService {
     Post create(CreatePostDto createPostDto);
