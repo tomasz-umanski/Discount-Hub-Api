@@ -1,0 +1,485 @@
+{
+	"info": {
+		"_postman_id": "63a25558-317b-4fef-b327-55c27aed8300",
+		"name": "discounthub",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35034326"
+	},
+	"item": [
+		{
+			"name": "usermanagement",
+			"item": [
+				{
+					"name": "RegisterUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"user@example.com\",\n  \"username\": \"john_doe\",\n  \"password\": \"strongpassword123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8818/api/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8818",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuthenticateUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"identifier\": \"user@example.com\",\n  \"password\": \"strongpassword123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8818/api/user/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8818",
+							"path": [
+								"api",
+								"user",
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RetrieveUserById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8818/api/user/d4293c76-7990-4551-ae2c-0ab82ce6c9d6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8818",
+							"path": [
+								"api",
+								"user",
+								"d4293c76-7990-4551-ae2c-0ab82ce6c9d6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RetrieveAllUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8818/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8818",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"test@example.com\",\n  \"username\": \"test\",\n  \"password\": \"strongpassword123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8818/api/user/31fb5da3-bede-4188-9571-5119c7157760",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8818",
+							"path": [
+								"api",
+								"user",
+								"31fb5da3-bede-4188-9571-5119c7157760"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8818/api/user/31fb5da3-bede-4188-9571-5119c7157760",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8818",
+							"path": [
+								"api",
+								"user",
+								"31fb5da3-bede-4188-9571-5119c7157760"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "categorymanagement",
+			"item": [
+				{
+					"name": "CreateCategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Technology\",\n  \"url\": \"/technology\",\n  \"icon\": \"<i class=\\\"bi bi-laptop\\\"></i>\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8818/api/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8818",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RetrieveCategoryById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Technology\",\n  \"url\": \"/technology\",\n  \"icon\": \"<i class=\\\"bi bi-laptop\\\"></i>\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8818/api/category/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8818",
+							"path": [
+								"api",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RetrieveAllCategories",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Technology\",\n  \"url\": \"/technology\",\n  \"icon\": \"<i class=\\\"bi bi-laptop\\\"></i>\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8818/api/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8818",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCategory",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Test\",\n  \"url\": \"/test\",\n  \"icon\": \"<i class=\\\"bi bi-laptop\\\"></i>\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8818/api/category/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8818",
+							"path": [
+								"api",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCategory",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Technology\",\n  \"url\": \"/technology\",\n  \"icon\": \"<i class=\\\"bi bi-laptop\\\"></i>\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8818/api/category/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8818",
+							"path": [
+								"api",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "postmanagement",
+			"item": [
+				{
+					"name": "CreatePost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userId\": \"48550b20-392d-404b-b50c-b117bd1dbaff\",\n  \"categoryId\": 1,\n  \"title\": \"Great Discount on Laptops\",\n  \"description\": \"Huge discount on the latest laptops...\",\n  \"newPrice\": 499.99,\n  \"oldPrice\": 999.99,\n  \"deliveryPrice\": 10,\n  \"offerUrl\": \"https://example.com/offer\",\n  \"imageUrl\": \"/image.jpg\",\n  \"endDate\": \"2024-12-31T23:59:59Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8818/api/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8818",
+							"path": [
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RetrievePostById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Technology\",\n  \"url\": \"/technology\",\n  \"icon\": \"<i class=\\\"bi bi-laptop\\\"></i>\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8818/api/post/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8818",
+							"path": [
+								"api",
+								"post",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RetrieveAllPosts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Technology\",\n  \"url\": \"/technology\",\n  \"icon\": \"<i class=\\\"bi bi-laptop\\\"></i>\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8818/api/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8818",
+							"path": [
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePost",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userId\": \"48550b20-392d-404b-b50c-b117bd1dbaff\",\n  \"categoryId\": 1,\n  \"title\": \"Great Discount on Laptops\",\n  \"description\": \"Huge discount on the latest laptops...\",\n  \"newPrice\": 499.99,\n  \"oldPrice\": 999.99,\n  \"deliveryPrice\": 10,\n  \"offerUrl\": \"https://example.com/offer\",\n  \"imageUrl\": \"/image.jpg\",\n  \"endDate\": \"2023-12-31T23:59:59Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8818/api/post/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8818",
+							"path": [
+								"api",
+								"post",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePost",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Technology\",\n  \"url\": \"/technology\",\n  \"icon\": \"<i class=\\\"bi bi-laptop\\\"></i>\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8818/api/post/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8818",
+							"path": [
+								"api",
+								"post",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

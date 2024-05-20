@@ -1,0 +1,18 @@
+version: "3.3"
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: discounthub_server:0.0.1
+    container_name: discounthub_server
+    ports:
+      - "8818:8818"
+    networks:
+      - discounthub_internal
+
+volumes:
+  discounthub_database:
+networks:
+  discounthub_internal:
